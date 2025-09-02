@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756782199.33474 "Roshan_Hegde.tex" "Roshan_Hegde.pdf" "Roshan_Hegde" 1756782199.78325 0
+["pdflatex"] 1756782314.40511 "Roshan_Hegde.tex" "Roshan_Hegde.pdf" "Roshan_Hegde" 1756782314.83668 0
   "/nix/store/g2dwp46lca9fzgmvdsj3qcqadz1j47pw-texlive-2025-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5523625 5d98cc6964bc50019ccf163ac1b10069 ""
   "/nix/store/g2dwp46lca9fzgmvdsj3qcqadz1j47pw-texlive-2025-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3600365 376cfe14c953ba9efe1eb95a26a6808d ""
   "/nix/store/g2dwp46lca9fzgmvdsj3qcqadz1j47pw-texlive-2025-env/share/texmf-var/web2c/texmf.cnf" 1 43847 e03f394ab5ce975cb77f7f526b330758 ""
@@ -104,9 +104,9 @@
   "/nix/store/wbhq2jz2wz9q80r2hdw7m4h7v4fcxw80-texlive-2025-env-texmfdist/tex/latex/tools/verbatim.sty" 1 7532 26d26e9d8f2ca784270d5da8ec7d102b ""
   "/nix/store/wbhq2jz2wz9q80r2hdw7m4h7v4fcxw80-texlive-2025-env-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/nix/store/wbhq2jz2wz9q80r2hdw7m4h7v4fcxw80-texlive-2025-env-texmfdist/tex/latex/xcolor/xcolor.sty" 1 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Roshan_Hegde.aux" 1756782199.72952 935 78d0f55fe54cceb013dace248bcc1a96 "pdflatex"
-  "Roshan_Hegde.out" 1756782199.73052 593 b07c95daf107b536bbafc02f8a9f3579 "pdflatex"
-  "Roshan_Hegde.tex" 1756782199.03152 13534 56596e71cac00818c8e8604097be439a ""
+  "Roshan_Hegde.aux" 1756782314.7817 935 78d0f55fe54cceb013dace248bcc1a96 "pdflatex"
+  "Roshan_Hegde.out" 1756782314.7817 593 b07c95daf107b536bbafc02f8a9f3579 "pdflatex"
+  "Roshan_Hegde.tex" 1756782314.1477 13534 05a5a63fd89dbb61e12cb8ac709e087a ""
   (generated)
   "Roshan_Hegde.aux"
   "Roshan_Hegde.log"
