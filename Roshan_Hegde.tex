@@ -133,18 +133,18 @@
     \vspace{-10pt}
     \subsection{Relevant Coursework}
       \textbf{Courses:} 
-      Advanced Algorithms,
-      Operating Systems Design,
+      Algorithms,
+      Operating Systems,
       Computer Architecture,
       Programming Languages and Compilers,
       % Algorithms and Models of Computation,
       Cryptography,
       % Numerical Methods,
-      Data Structures (Honors),
+      Data Structures,
       Probability and Statistics for Computer Science,
       % Fundamental Mathematics,
       % Abstract Linear Algebra,
-      Linear Algebra with Computational Applications
+      Applied Linear Algebra
       % Discrete Structures
       \\
 
@@ -155,11 +155,9 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     
-     \textbf{Languages}{: C, C++, Go, Java, Kotlin, Python, Lua, Rust, Typescript} \\
-     
-     \textbf{Tools}{: Git, GitHub, Docker, Linux, Nix, Vim }
-     
-     \textbf{Frameworks}{: Svelte, React, Tailwindcss, Vite, AWS} \\
+     \textbf{Languages}{: C, C++, Rust, Go, Java, Kotlin, Python, Typescript} \\
+     \textbf{Tools}{: Git, Docker, Linux, Nix, Vim}
+     % \textbf{Frameworks}{: Svelte, React, Tailwindcss, Vite, AWS} \\
      
      % \textbf{Libraries}{: numpy, pytorch, pandas, matplotlib}
      
@@ -170,78 +168,57 @@
 \section{Work Experience}
   \resumeSubHeadingListStart
         \resumeProjectHeading {
-            \textbf{Olam Food and Ingredients}, Chicago IL $|$ 
-            \footnotesize\emph{Infrastructure Development Intern} $|$ \emph{Azure, python}
+            \textbf{Software Engineering Intern}, Chicago IL $|$ 
+            \footnotesize\emph{Olam Food and Ingredients} $|$ \emph{Azure, python}
         }{May -- August 2025}
         \resumeItemListStart
             \resumeItem{Analyzed current utilization of cloud assets and identified opportunities to improve cost efficiency by 12\%}
             \resumeItem{Developed a data analysis service to automate VM performance reporting to identify over-allocated resources}
+            \resumeItem{Proposed a plan to improve resource cost-effectiveness to the infrastructure team}
         \resumeItemListEnd
+
+        \resumeProjectHeading {
+            \textbf{University Of Illinois Urbana-Champaign} $|$ 
+            \footnotesize\emph{Operating Systems Course Assistant} $|$ \emph{C, GDB}
+        }{August 2025 - Present}
+        \resumeItemListStart
+            \resumeItem{Developed and reviewed programming assignments for students taking the course}
+            \resumeItem{Answered both conceptual and implementation questions while hosting office hours}
+        \resumeItemListEnd
+
         \resumeProjectHeading {
             \textbf{\href{https://www.mechmania.org/}{MechMania}}, Champaign IL $|$ 
-            \footnotesize\emph{Lead Infrastructure Developer} $|$ \emph{Go, AWS, python}
+            \footnotesize\emph{Lead Infrastructure Developer} $|$ \emph{Go, Rust, Python, Nix}
         }{August 2024 -- Present}
         \resumeItemListStart
             \resumeItem{Built a multithreaded web-socket server in Go interacting with AWS services including databases and cloud storage}
-            \resumeItem{Implemented a Java-Python language interop system for broader audience reach}
+            \resumeItem{Implemented a custom shared memory IPC protocol for multi-language support}
+            \resumeItem{Leveraged Nix and bubble-wrap to run arbitrary code without vulnerabilities}
         \resumeItemListEnd
   \resumeSubHeadingListEnd 
 
-% -------------------- AWARDS --------------------
-\section{Awards}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-        \resumeProjectHeading {
-            \textbf{\href{https://devpost.com/software/blackbox-studio}{1st place Developer Tool, Hackillinois '25}} $|$
-            \footnotesize\emph{Rust, Cargo, Git}
-        }{ February 2024 }
-        \resumeItemListStart
-            \resumeItem{Competed with over 1,100 other students at Illinois' largest Hackathon}
-            \resumeItem{Developed a full stack developer tool intended for rapid prototyping of data pipelines}
-            \resumeItem{Defined a strongly typed JSON based protocol for ease of extensibility and versatility}
-        \resumeItemListEnd
-         \resumeProjectHeading {
-             \textbf{\href{https://www.mechmania.org/}{1st place, MechMania '24}} $|$
-             \footnotesize\emph{Java, Python, Git}
-         }{ September 2024 }
-         \resumeItemListStart
-         \resumeItem{Competed in a 24-hour Game AI Hackathon held annually since 1995 where students' AI models compete}
-         \resumeItem{Fine-tuned heuristics to pilot dogfighting planes, leveraging predictive modeling to gain a competitive edge}
-         \resumeItemListEnd
-        \resumeProjectHeading {
-            \textbf{\href{https://devpost.com/software/hello_lang}{1st place, Hackillinois '24}} $|$
-            \footnotesize\emph{Rust, Cargo, Git}
-        }{ February 2024 }
-        \resumeItemListStart
-            \resumeItem{Built a developer tool used to universally initialize a basic development environment for over 30 languages}
-            \resumeItem{Designed modular software architecture allowing for native configuration and rapid extensibility}
-        \resumeItemListEnd
-
-        \resumeProjectHeading {
-            \textbf{\href{https://www.mechmania.org/}{1st place, MechMania '23}} $|$
-            \footnotesize\emph{Java, Python, Git}
-        }{ September 2023 }
-        \resumeItemListStart
-            % \resumeItem{Developed an AI model that competed with other participants' models in a simulated turn-based environment}
-            \resumeItem{Implemented A* pathfinding with a modified Manhattan distance heuristic}
-            \resumeItem{Employed a divide and conquer strategy in tandem with pathfinding to outperform other models}
-        \resumeItemListEnd
-
-     
-    }}
- \end{itemize}
 
 % -------------------- PROJECTS --------------------
 \section{Projects}
     \resumeSubHeadingListStart
 
         \resumeProjectHeading
-        {\textbf{\href{https://github.com/RoshanAH/nix-tinker}{nix-tinker}} $|$ \footnotesize\emph{Rust, Cargo, Nix, Nix Flakes}}{ May 2024 -- Present}
+        {\textbf{LumonOS: Operating System} $|$ \footnotesize\emph{C, Unix, RISC-V, QEMU, GDB}}{ January -- August 2025}
+        \resumeItemListStart
+            \resumeItem{Created fully functional, RISC-V, Unix-based pre-emptive operating system with round robin scheduling policy.}
+            \resumeItem{Built a virtio block driver, cryptography driver, and entropy driver}
+            \resumeItem{Implemented support for pipes between processes and argument passing according to POSIX standard}
+            \resumeItem{Placed 2nd in the Operating System design competition hosted by the ECE department}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/RoshanAH/nix-tinker}{nix-tinker}} $|$ \footnotesize\emph{Rust, Cargo, Nix}}{ May 2024 -- Present}
         \resumeItemListStart
             \resumeItem{Developed an open-source tool for rapid prototyping of Nix configuration files, streamlining development workflow}
             \resumeItem{Crafted an intuitive CLI for managing file links with the Nix store, significantly enhancing user efficiency}
             \resumeItem{Leveraged Nix Flakes to guarantee reproducible and consistent build environments across diverse systems}
         \resumeItemListEnd
+
 
         % \resumeProjectHeading
         % {\textbf{RecursiveTicTacToeML} $|$ \footnotesize\emph{Rust, Cargo, Nix, Git}}{ June 2022 -- Present}
@@ -264,12 +241,38 @@
         % \resumeProjectHeading
         % {\textbf{DinosaurML} $|$ \footnotesize\emph{Java, Gradle, JavaFX, Git, Intellij IDEA}}{ June 2020 -- August 2020}
         % \resumeItemListStart
-        %     \resumeItem{Implemented NEAT (Neuroevolution of Augmenting Topologies) to the chrome dinosaur game to produce a skill level higher than that of a human}
+        %     \resumeItem{Implemented NEAT () to the chrome dinosaur game to produce a skill level higher than that of a human}
         %     \resumeItem{Developed a full replica of the chrome dinosaur game using JavaFX}
         %     \resumeItem{Implemented a complete neural net visualizer with input nodes, output nodes, and hidden layers}
         % \resumeItemListEnd
 
     \resumeSubHeadingListEnd
+
+% -------------------- AWARDS --------------------
+\section{Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \resumeProjectHeading {
+            \textbf{\href{https://devpost.com/software/blackbox-studio}{1st place, Hackillinois '24, '25}} $|$
+            \footnotesize\emph{Rust, Cargo}
+        }{ February 2024 and 2025 }
+        \resumeItemListStart
+            \resumeItem{Competed with over 1,100 other students at Illinois' largest Hackathon}
+            \resumeItem{Developed a full stack developer tool intended for rapid prototyping of data pipelines}
+            \resumeItem{Defined a strongly typed JSON based protocol for ease of extensibility and versatility}
+            \resumeItem{Built a developer tool used to universally initialize a basic development environment for over 30 languages}
+            % \resumeItem{Designed modular software architecture allowing for native configuration and rapid extensibility}
+        \resumeItemListEnd
+         \resumeProjectHeading {
+             \textbf{\href{https://www.mechmania.org/}{1st place, MechMania '24, '25}} $|$
+             \footnotesize\emph{Java, Python}
+         }{ September 2023 and 2024}
+         \resumeItemListStart
+             \resumeItem{Implemented A* pathfinding with a modified Manhattan distance heuristic}
+             \resumeItem{Fine-tuned heuristics to pilot dogfighting planes, leveraging predictive modeling to gain a competitive edge}
+         \resumeItemListEnd
+    }}
+ \end{itemize}
 
 
 % -------------------- EXTRACURRICULARS --------------------
