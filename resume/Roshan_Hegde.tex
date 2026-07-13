@@ -1,0 +1,339 @@
+%-------------------------
+% Resume in Latex
+% Author : Roshan
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+% -------------------- HEADING--------------------
+\vspace{-7pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Roshan Hegde} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/RoshanAH}{\underline{github.com/RoshanAH}} $  $
+  %  \faIcon{code}
+%    \href{https://www.johndoe.com}
+%    {\underline{johndoe.com}} $  $
+ %   \faIcon{linkedin}
+  %  \href{https://linkedin.com/in/johndoe}{\underline{linkedin.com/in/johndoe}} $  $
+    \faIcon{envelope}
+    \href{mailto:roshanahegde@gmail.com}{\underline{roshanahegde@gmail.com}}
+    \faIcon{phone}
+    {\underline{(952) 594-4175}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{University of Illinois at Urbana-Champaign} & May 2027 \\
+      \textit{\small{B.S. in Computer Science, Grainger College of Engineering}} & \textit{\small{GPA: 3.80/4.0}} \\
+      \textit{\small{B.S. in Mathematics, College of Liberal Arts \& Sciences}}
+    \end{tabular*}\vspace{-7pt}
+    
+
+    \vspace{-10pt}
+    \subsection{Relevant Coursework}
+      \textbf{Courses:} 
+      Advanced Algorithms,
+      Operating Systems,
+      % Computer Architecture,
+      Programming Languages and Compilers,
+      Abstract Algebra,
+      Linear Algebra,
+      Graph Theory,
+      % Algorithms and Models of Computation,
+      Cryptography,
+      % Numerical Methods,
+      Data Structures,
+      Probability and Statistics
+      % Fundamental Mathematics,
+      % Discrete Structures
+      \\
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: C, C++, Rust, Go, Java, Kotlin, Python, Typescript} \\
+     \textbf{Tools}{: Git, Docker, Linux, Nix, Vim}
+     % \textbf{Frameworks}{: Svelte, React, Tailwindcss, Vite, AWS} \\
+     
+     % \textbf{Libraries}{: numpy, pytorch, pandas, matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- WORK EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+        \resumeProjectHeading {
+            \textbf{Grainger} $|$ 
+            \footnotesize\emph{SWE Intern} $|$ \emph{Typescript, PostgreSQL, AWS}
+        }{June - August 2026}
+        \resumeItemListStart
+            \resumeItem{Contributed directly to the full-stack application Grainger Workstation, serving 1000+ users}
+            \resumeItem{Built a code migration tool used across 12 teams to move off Mocha onto Vitest, reducing CI/CD times by 80\% }
+            \resumeItem{Hybridized AST transformations with agentic reasoning to minimize manual work without sacrificing correctness}
+        \resumeItemListEnd
+
+        \resumeProjectHeading {
+            \textbf{OFI}, Chicago IL $|$ 
+            \footnotesize\emph{SWE Intern} $|$ \emph{Azure, python}
+        }{May -- August 2025}
+        \resumeItemListStart
+            \resumeItem{Analyzed current utilization of cloud assets and identified opportunities to improve cost efficiency by 12\%}
+            \resumeItem{Developed a data analysis service to automate VM performance reporting to identify over-allocated resources}
+            \resumeItem{Proposed a plan to improve resource cost-effectiveness to the infrastructure team}
+        \resumeItemListEnd
+
+        \resumeProjectHeading {
+            \textbf{University Of Illinois Urbana-Champaign} $|$ 
+            \footnotesize\emph{Operating Systems Course Assistant} $|$ \emph{C, GDB}
+        }{August 2025 - Present}
+        \resumeItemListStart
+            \resumeItem{Developed and reviewed programming assignments for students taking the course}
+            \resumeItem{Answered both conceptual and implementation questions while hosting office hours}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd 
+
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading {
+            \textbf{\href{https://www.mechmania.org/}{MechMania}}, Champaign IL $|$ 
+            \footnotesize\emph{Lead Developer} $|$ \emph{Go, Rust, Python, Nix}
+        }{August 2024 -- Present}
+        \resumeItemListStart
+            \resumeItem{Built a multithreaded web-socket server in Go interacting with AWS services including databases and cloud storage}
+            \resumeItem{Reworked a web-socket IPC protocol to shared memory, resulting in a $>$1000x speedup}
+            \resumeItem{Hardened security by utilizing Nix and bubble-wrap to run arbitrary code without vulnerabilities}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{LumonOS: Operating System} $|$ \footnotesize\emph{C, Unix, RISC-V, QEMU, GDB}}{ January -- August 2025}
+        \resumeItemListStart
+            \resumeItem{Created fully functional, RISC-V, Unix-based pre-emptive operating system with round robin scheduling policy.}
+            \resumeItem{Built a virtio block driver, cryptography driver, and entropy driver}
+            \resumeItem{Implemented support for pipes between processes and argument passing according to POSIX standard}
+            \resumeItem{Placed 3rd in the Operating System design competition hosted by the ECE department}
+        \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{\href{https://github.com/RoshanAH/nix-tinker}{nix-tinker}} $|$ \footnotesize\emph{Rust, Cargo, Nix}}{ May 2024 -- Present}
+        % \resumeItemListStart
+        %     \resumeItem{Developed an open-source tool for rapid prototyping of Nix configuration files, streamlining development workflow}
+        %     \resumeItem{Crafted an intuitive CLI for managing file links with the Nix store, significantly enhancing user efficiency}
+        %     \resumeItem{Leveraged Nix Flakes to guarantee reproducible and consistent build environments across diverse systems}
+        % \resumeItemListEnd
+
+
+        % \resumeProjectHeading
+        % {\textbf{RecursiveTicTacToeML} $|$ \footnotesize\emph{Rust, Cargo, Nix, Git}}{ June 2022 -- Present}
+        % \resumeItemListStart
+        %     \resumeItem{Designed and implemented an n-dimensional recursive Tic Tac Toe game to explore advanced game dynamics}
+        %     \resumeItem{Developed a self-training AI using custom gradient descent and backpropagation, generating data through self-play}
+        %     % \resumeItem{Wrote a geometry-based recursive renderer with hand derived calculus based animations}
+        %     \resumeItem{Engineered a real-time, websocket-based multiplayer mode with rigorous game state validation}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{Algorithm Implementations} $|$ \footnotesize\emph{Java, Gradle, JavaFX, Git, Intellij IDEA}}{ 2021}
+        % \resumeItemListStart
+        %     \resumeItem{A* pathfinding algorithm and visualizer}
+        %     \resumeItem{Maze generation and solution algorithm and visualizer}
+        %  %   \resumeItem{Maze solving algorithm and visualizer}
+        %     \resumeItem{Inverse Kinematics visualizer}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{DinosaurML} $|$ \footnotesize\emph{Java, Gradle, JavaFX, Git, Intellij IDEA}}{ June 2020 -- August 2020}
+        % \resumeItemListStart
+        %     \resumeItem{Implemented NEAT () to the chrome dinosaur game to produce a skill level higher than that of a human}
+        %     \resumeItem{Developed a full replica of the chrome dinosaur game using JavaFX}
+        %     \resumeItem{Implemented a complete neural net visualizer with input nodes, output nodes, and hidden layers}
+        % \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+% -------------------- AWARDS --------------------
+\section{Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+
+        \small{\resumeProjectHeading{
+            \textbf{1st Place, GPT2 Inference Optimization Competition} $|$ 
+            \footnotesize\emph{Cuda, C, PTX, Nsight Compute}
+        }{ December 2025 }
+        \resumeItemListStart
+            \resumeItem{Created custom CUDA kernels, profiled with NVIDIA Nsight Compute, achieving a 120x speedup over the baseline and 2x speedup over NVIDIA cuBLAS}
+            \resumeItem{Implemented and tuned optimizations including flash attention, tensor cores, shared memory tiling, and fusion}
+        \resumeItemListEnd
+        \resumeProjectHeading {
+            \textbf{\href{https://devpost.com/software/blackbox-studio}{1st place, Hackillinois '24, '25}} $|$
+            \footnotesize\emph{Rust, Cargo}
+        }{ February 2024 and 2025 }
+        \resumeItemListStart
+            \resumeItem{Competed with over 1,100 other students at Illinois' largest Hackathon, winning the General and DevTool tracks}
+            % \resumeItem{Developed a full stack developer tool intended for rapid prototyping of data pipelines}
+            % \resumeItem{Defined a strongly typed JSON based protocol for ease of extensibility and versatility}
+            % \resumeItem{Built a developer tool used to universally initialize a basic development environment for over 30 languages}
+            % \resumeItem{Designed modular software architecture allowing for native configuration and rapid extensibility}
+        \resumeItemListEnd
+         \resumeProjectHeading {
+             \textbf{\href{https://www.mechmania.org/}{1st place, MechMania '24, '25}} $|$
+             \footnotesize\emph{Java, Python}
+         }{ September 2023 and 2024}
+         \resumeItemListStart
+             \resumeItem{Fine-tuned heuristics to control human and zombie swarms and to pilot dogfighting planes}
+         \resumeItemListEnd
+        }
+ \end{itemize}
+
+
+% -------------------- EXTRACURRICULARS --------------------
+% \section{Extracurriculars}
+%   \resumeSubHeadingListStart
+
+
+        % \resumeProjectHeading {
+        %     \textbf{\href{https://opensourceatillinois.com/}{Opensource@Illinois}} $|$ 
+        %     \footnotesize\emph{Member}
+        % }{August 2024 -- Present}
+        % \resumeItemListStart
+        %     \resumeItem{Attended workshops focused on teaching good open source development practices and tools}
+        %     \resumeItem{Working in a subteam to contribute to various open source projects}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading {
+        %     \textbf{\href{ACM cybersecurity division at UIUC}{SIGpwny}} $|$ 
+        %     \footnotesize\emph{Member}
+        % }{August 2023 -- Present}
+        % \resumeItemListStart
+        %     \resumeItem{Learned various offensive cybersecurity strategies}
+        %     \resumeItem{Attended weekly meetings and participated in CTF's ()}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading {
+        %     \textbf{FTC (First Tech Challenge)} $|$ 
+        %     \footnotesize\emph{Lead Programmer all 7 years}
+        % } {September 2017 -- May 2023}
+        % \resumeItemListStart
+        %     \resumeItem{Designed multiple iterations of robot software architecture on embedded systems}
+        %     \resumeItem{Solved computational problems such as computer vision and motion profiling for automated piloting of robots}
+        %     \resumeItem{Qualified and competed at state level championship 5 times}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        %   {\textbf{Private Tutoring}\vspace{8pt} $|$ \footnotesize\emph{Tutor}}{August 2021 -- May 2023}
+        %   \small{Java, Calculus I and II, 8th grade Math}
+
+        % \resumeProjectHeading
+        %   {\textbf{Cello} $|$ \footnotesize\emph{Musician}\vspace{8pt}}{September 2016 -- May 2023}
+        %   {\small{Took private lessons as well as played in the highest level orchestra of MYA (Midwest Youth Artists)}}
+          
+    % \resumeSubHeadingListEnd 
+
+\end{document}
+
